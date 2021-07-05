@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using CleanArch.Infra.Data;
+using CleanArch.Infra.Data.Context;
 using CleanArch.Mvc.Data;
 
 using Microsoft.AspNetCore.Builder;
