@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using CleanArch.Api.Configurations;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
 
@@ -44,6 +45,7 @@ namespace CleanArch.Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "University API", Version = "v1" });
             });
             services.AddMediatR(typeof(Startup));
+            services.RegisterAutoMapper();
             RegisterServices(services);
         }
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
+using CleanArch.Mvc.Configurations;
 using CleanArch.Mvc.Data;
 
 using MediatR;
@@ -48,6 +49,7 @@ namespace CleanArch.Mvc
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddMediatR(typeof(Startup));
+            services.RegisterAutoMapper();
             RegisterServices(services);
         }
 
