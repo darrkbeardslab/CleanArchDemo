@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using CleanArch.Infra.Data;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
 using CleanArch.Mvc.Data;
